@@ -1,5 +1,5 @@
 import { DriverProfile, DriverStatus, DeliveryMission, RouteMilestone, VehicleType } from '../domain/types';
-import { CloudEvent } from '@oenexa/event-schemas';
+import { CloudEvent } from '../domain/events.js';
 
 export class DriverService {
   private drivers: Map<string, DriverProfile> = new Map();
